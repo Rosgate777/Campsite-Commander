@@ -19,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        // Delay of 3000 milliseconds (3 seconds) then move to MainActivity
+        // Delay of (3 seconds) then go to MainActivity
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish() // Destroys SplashActivity so the user can't navigate back to it
